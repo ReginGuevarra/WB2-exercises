@@ -1,20 +1,22 @@
-function yearsToDouble(initialValue, interestRate) {
-  if (initialValue <= 0 || interestRate <= 0) {
-    throw new Error("Initial value and interest rate must be greater than 0.");
-  }
+function ConvertToCelcius() {
 
-  let years = 72 / interestRate;
-  return years;
 }
 
-// Usage example:
-let initialValue = 1000; // Replace X with the actual amount.
-let interestRate = 5; // Replace IR with the actual interest rate in percentage.
+// 1000 dollars
+// Every month we get 100 dollars (interest)
+// 1000 / 100 = 10
+// An interest rate of 1%
+// 1% of 1000 dollars = 10 dollars
+// 1% 1010 dollars = 10,1 dollar
 
-try {
-  let result = yearsToDouble(initialValue, interestRate);
-  console.log(`It will take approximately ${result.toFixed(2)} years to double the value of the savings account.`);
-} catch (error) {
-  console.error(error.message);
-}
 
+// input
+let cash = 1000;
+let interestrate =8;
+
+//Algorithm (72 / interestrate = amount of years)
+let amountOfYears = 72 / interestrate
+
+
+//Outout
+console.log("After " + amountOfYears + " Years your cash will be doubled")
